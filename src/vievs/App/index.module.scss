@@ -1,0 +1,15 @@
+.toDoList {
+  min-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(249, 247, 247);
+  padding: 20px 55px;
+
+  &_title {
+    text-align: center;
+    color: rgb(17, 45, 78);
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 0.3em;
+  }
+}

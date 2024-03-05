@@ -1,7 +1,8 @@
-import ReactDOM from 'react-dom/client'
+import ReactDOM from "react-dom/client";
 
-import { App } from './vievs/App'
+import { App } from "./vievs/App";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-    <App />
-)
+import "../src/vievs/styles/reset.scss";
+import "../src/vievs/styles/common.scss";
+
+ReactDOM.createRoot(document.getElementById("root")!).render(<App />);
