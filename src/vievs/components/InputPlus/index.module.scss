@@ -1,0 +1,39 @@
+.input {
+  display: grid;
+  grid-template-columns: 250px 45px;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  &_item {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 9px 10px;
+    border: 1px solid rgba(177, 177, 177, 0.4);
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background: rgb(219, 226, 239);
+
+    &::placeholder {
+      color: rgb(123, 123, 123);
+    }
+
+    &:focus {
+      outline-color: rgb(63, 114, 175);
+      outline-offset: -1px;
+    }
+  }
+
+  &_btn {
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background: rgb(63, 114, 175) url('./images/plus.svg') no-repeat center center;
+    margin-left: -3px;
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+  }
+}
