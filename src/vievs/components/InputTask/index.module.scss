@@ -1,0 +1,66 @@
+.task {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px;
+  margin-top: 15px;
+  background: #dbe2ef;
+  border-radius: 5px;
+  padding-right: 10px;
+
+  &_label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 12px 15px;
+    cursor: pointer;
+  }
+
+  &_checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &_inputEdit {
+    font: 1rem/1em "Roboto", sans-serif;
+    padding: 5px;
+    border: none;
+    background: none;
+
+    &:focus {
+        outline-color: rgb(63, 114, 175);
+    }
+  }
+
+  &_title {
+    line-height: 1.2;
+    padding: 5px;
+  }
+
+  &_edit,
+  &_remove,
+  &_save {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &_edit {
+    background: url("./images/edit.svg") no-repeat center center;
+  }
+
+  &_remove {
+    background: url("./images/trash.svg") no-repeat center center;
+  }
+
+  &_save {
+    background: url("./images/check.svg") no-repeat center center;
+  }
+}

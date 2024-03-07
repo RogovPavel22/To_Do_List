@@ -1,6 +1,5 @@
-import React from "react";
-
 import { InputPlus } from "../components/InputPlus";
+import { InputTask } from "../components/InputTask";
 import { useToDoStore } from "../../data/stores/toDoStore";
 
 import style from "./index.module.scss";
@@ -23,7 +22,21 @@ export const App: React.FC = () => {
         />
       </section>
       <hr />
-      <section className={style.toDoList_tasks}></section>
+      <section className={style.toDoList_tasks}>
+        {!tasks.length && (
+          <p className={style.toDoList_text}>There is no one task :(</p>
+        )}
+        {tasks.map((item) => (
+          <InputTask
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            onDone={removeTask}
+            onEdited={updateTask}
+            onRemoved={removeTask}
+          />
+        ))}
+      </section>
     </article>
   );
 };

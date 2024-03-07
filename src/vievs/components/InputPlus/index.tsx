@@ -31,7 +31,7 @@ export const InputPlus: React.FC<InputPlusProps> = ({ onAdd }) => {
         className={style.input_btn}
         onClick={addTask}
         aria-label="Add"
-      ></button>
+      />
     </div>
   );
 };
